@@ -1,0 +1,56 @@
+.container{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    padding: 0;
+    flex-wrap: warp;
+    align-items: flex-start;
+    gap: 10px;
+}
+.image{
+    flex: 1 1 auto;
+    max-width: 200px;
+}
+
+.image img {
+        width: 100%; 
+        height: auto; 
+        display: block;
+        border-radius: 8px;
+    
+}
+.image:hover{
+    transform: scale(1.5);
+
+}
+.image{
+    cursor: pointer;
+     transition: 0.8s ease; 
+}
+body{
+    background-color: #000000;
+    margin: 0%;
+    padding: 0px;
+    color: white;
+
+}
+
+.container:hover > .image:not(:hover) {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+.image {
+    transition: opacity 0.8s;
+}
+
+.name{
+    text-align: center;
+    margin-top: 8px;
+    color: azure;
+    font-size: 14px;
+}
+h1{
+    text-align: center;
+}
